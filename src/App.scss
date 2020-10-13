@@ -1,0 +1,13 @@
+* {
+   box-sizing: border-box;
+}
+
+.images-container {
+   display: flex;
+   justify-content: left;
+}
+
+.image {
+   width: 150px;
+   height: auto;
+}

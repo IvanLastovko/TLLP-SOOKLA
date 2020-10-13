@@ -1,0 +1,29 @@
+.header {
+   margin: 0;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 25px 30px;
+   font-size: 1.1rem;
+   text-align: right;
+   font-weight: 500;
+}
+.header-container-main-page {
+   background-color: orangered;
+
+   .link-to-edit-page {
+      text-decoration: underline;
+      color: black;
+      background-color: orangered;
+   }
+}
+
+.header-container-edit-page {
+   background-color: darkorange;
+
+   .link-to-main-page {
+      text-decoration: underline;
+      color: #994705;
+      background-color: darkorange;
+   }
+}

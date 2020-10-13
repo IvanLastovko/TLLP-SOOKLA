@@ -1,0 +1,24 @@
+::placeholder {
+   color: darkorange;
+}
+.sign-in-container {
+   position: fixed;
+   top: 50%;
+   width: 100%;
+   height: 10vh;
+   display: flex;
+   justify-content: center;
+
+   input {
+      width: 40%;
+      font-size: 2rem;
+      letter-spacing: 5px;
+      text-align: center;
+      outline: none;
+      border-radius: 7px;
+      border-color: darkorange;
+      color: darkorange;
+
+      box-shadow: yellow 0px 2px 4px 2px;
+   }
+}

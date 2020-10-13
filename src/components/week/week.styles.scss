@@ -1,0 +1,31 @@
+.week-container {
+   text-align: center;
+   #week-number {
+      margin-bottom: 0;
+   }
+}
+
+.weekdays-container {
+   display: grid;
+   grid-template-columns: auto 50px auto;
+   h2{
+      width: 250px;
+   }
+}
+
+select {
+   font-size: 1em;
+   margin-top: 0.67em;
+   margin-bottom: 0.67em;
+   margin-left: 0;
+   margin-right: 0;
+   font-weight: bold;
+   border: 0px;
+   outline: 0px;
+   background-color: rgb(252, 251, 184);
+   appearance: none;
+}
+
+select option {
+   font-size: 0.7em;
+}
