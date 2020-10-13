@@ -22,8 +22,6 @@ class ViewTable extends React.Component {
 
    loadTableFromDatabase() {
 
-      fetch('https://tllp-sookla-api.herokuapp.com').then(response => console.log(response.body));
-
       const nadal = document.querySelector('#select-week-to-edit').value;
       const year = document.querySelector('h2').innerHTML.split(' ')[2];
       const nadal_year = nadal + '-' + year;
