@@ -70,7 +70,6 @@ class EditTable extends React.Component {
       // fetch('http://localhost:3003/saveDataToDatabase', {
       fetch('https://tllp-sookla-api.herokuapp.com/saveDataToDatabase', {
          method: 'POST',
-         // mode: 'no-cors',
          headers: { 'Content-Type': 'application/json' },
          body: JSON.stringify({
             nadal_year,
@@ -121,7 +120,6 @@ class EditTable extends React.Component {
       // fetch('http://localhost:3003/getDataFromDatabase', {
       fetch('https://tllp-sookla-api.herokuapp.com/getDataFromDatabase', {
          method: 'POST',
-         // mode: 'no-cors',
          headers: { 'Content-Type': 'application/json' },
          body: JSON.stringify({ nadal_year })
       })
@@ -129,6 +127,7 @@ class EditTable extends React.Component {
          .then(data => {
             calculateRowsNumer(data);
          })
+         // .then(response => console.log(response))
          .catch(function (error) {
             console.log(error);
          });

@@ -30,7 +30,6 @@ class ViewTable extends React.Component {
       // fetch('http://localhost:3003/getDataFromDatabase', {
       fetch('https://tllp-sookla-api.herokuapp.com/getDataFromDatabase', {
          method: 'POST',
-         // mode: 'no-cors',
          headers: { 'Content-Type': 'application/json' },
          body: JSON.stringify({ nadal_year })
       })
