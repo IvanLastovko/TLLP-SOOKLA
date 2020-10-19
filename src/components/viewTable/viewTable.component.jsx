@@ -27,7 +27,6 @@ class ViewTable extends React.Component {
       const nadal_year = nadal + '-' + year;
       console.log(nadal_year);
 
-      // fetch('http://localhost:3003/getDataFromDatabase', {
       fetch('https://tllp-sookla-api.herokuapp.com/getDataFromDatabase', {
          method: 'POST',
          headers: { 'Content-Type': 'application/json' },
@@ -35,7 +34,7 @@ class ViewTable extends React.Component {
       })
          .then(response => response.json())
          .then(data => {
-            calculateRowsNumer(data);
+            calculateRowsNumer(data); // Calculates, how many rows must be in a specific textarea, and also puts strings from database into textareas
          })
          .catch(function (error) {
             console.log(error);

@@ -2,10 +2,9 @@ import React from 'react';
 
 import './week.styles.scss';
 
-// A function which gives you the nubmer of current week. dunno how it works, it does not matter :)
+// Functions which give you the nubmer of current week, total amout of weeks in a specific year and monday date 
 import getCurrentWeekNumber from './getCurrentWeekNumber.js';
 import getTotalAmountOfWeeksInAYear from './getTotalAmountOfWeeksInAYear';
-
 import { monday } from './getDateForMondayAndFriday.js';
 
 const months = [
@@ -69,6 +68,7 @@ class CurrentWeek extends React.Component {
       })
    }
 
+   // After mounting - download data from database
    componentDidMount(){
       this.props.onChangeFunction && this.props.onChangeFunction();
    }
