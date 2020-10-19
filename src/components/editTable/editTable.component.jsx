@@ -13,20 +13,14 @@ import './editTable.styles.scss';
 const bcrypt = require('bcryptjs');
 
 class EditTable extends React.Component {
-   constructor() {
-      super();
 
-      this.state = {
-         food: ''
-      }
-   };
-
-   hideAllButtons() {
-      const buttons = document.querySelectorAll('button');
+   hideAllButtons() { // This functions hides all unnecessary components on DOM to make the invisible in printed menu.
+      const buttons = document.querySelectorAll('button'); //Hide buttons
       buttons.forEach(button => {
          button.style.visibility = 'hidden';
       });
-      document.querySelector('.header-container-edit-page').remove();
+      document.querySelector('.header-container-edit-page').remove(); // Remove header
+      document.querySelector('#select-week-to-edit').classList.add('hidden-arrow-of-select'); // Add class to hide arrow in <select>
    };
 
    saveTableToDatabase() {
@@ -66,8 +60,6 @@ class EditTable extends React.Component {
       const created_in = new Date();
 
       // Make POST Request using fetch API and pass all required inputs to back-end
-
-      // fetch('http://localhost:3003/saveDataToDatabase', {
       fetch('https://tllp-sookla-api.herokuapp.com/saveDataToDatabase', {
          method: 'POST',
          headers: { 'Content-Type': 'application/json' },
@@ -117,7 +109,7 @@ class EditTable extends React.Component {
       const nadal_year = nadal + '-' + year;
       console.log(nadal_year);
 
-      // fetch('http://localhost:3003/getDataFromDatabase', {
+      // Download data from database
       fetch('https://tllp-sookla-api.herokuapp.com/getDataFromDatabase', {
          method: 'POST',
          headers: { 'Content-Type': 'application/json' },

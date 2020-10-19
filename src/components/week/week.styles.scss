@@ -23,7 +23,11 @@ select {
    border: 0px;
    outline: 0px;
    background-color: rgb(252, 251, 184);
-   appearance: none;
+
+   &.hidden-arrow-of-select{
+      appearance: none;
+      width: 70px;
+   }
 }
 
 select option {
