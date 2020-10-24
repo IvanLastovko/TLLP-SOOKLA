@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './signInWindow.component.scss';
+import './signInWindow.styles.scss';
 
 const bcrypt = require('bcryptjs');
 

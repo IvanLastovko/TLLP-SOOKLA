@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './tablepart.component.scss';
+import './tablepart.styles.scss';
 
 class TablePart extends Component {
    constructor(props) {
